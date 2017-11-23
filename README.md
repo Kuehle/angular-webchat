@@ -1,6 +1,7 @@
 # WebchatBotKuehle
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
+Tipps for Development -> https://tutorialedge.net/typescript/angular/angular-socket-io-tutorial/
 
 ## Development server
 
