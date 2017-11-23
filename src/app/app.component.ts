@@ -9,10 +9,13 @@ import { ChatService } from './chat.service';
 export class AppComponent implements OnInit{
   title = 'app';
 
+  messages:Array<any> = []
+
   constructor(private chat: ChatService){ }
 
   ngOnInit() {
     this.chat.messages.subscribe(msg => {
+      this.messages.push(msg);
       console.log(msg);
     })
   }
