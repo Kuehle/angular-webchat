@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ChatService } from './chat.service';
 
 @Component({
@@ -20,8 +20,8 @@ export class AppComponent implements OnInit{
     })
   }
 
-  sendMessage() {
-    this.chat.sendMsg("Test Message");
+  sendMessage(messageText) {
+    this.chat.sendMsg(messageText);
   }
 
 }

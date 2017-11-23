@@ -3,6 +3,6 @@
 </div>
 
 <div class="controlls">
-    <input type="text">
-    <button (click)="sendMessage()">Send Message</button>
+    <input [(ngModel)]="newMessage" type="text" autofocus (submit)="console.log('submbit')">
+    <button (click)="sendMessage(newMessage)">Senden</button>
 </div>
