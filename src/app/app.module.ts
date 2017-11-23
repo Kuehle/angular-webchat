@@ -2,21 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ChatComponent } from './chat/chat.component';
 import { ChatService } from './chat.service';
 import { WebsocketService } from './websocket.service';
+import { Statement } from '@angular/compiler/src/output/output_ast';
+import { StateService } from './state.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ChatComponent
+    AppComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [
     ChatService,
-    WebsocketService
+    WebsocketService,
+    StateService
   ],
   bootstrap: [AppComponent]
 })
