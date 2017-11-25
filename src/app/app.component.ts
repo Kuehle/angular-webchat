@@ -8,6 +8,7 @@ import { ChatService } from './chat.service';
 })
 export class AppComponent implements OnInit{
   title = 'app';
+  newMessage = '';
 
   messages:Array<any> = []
 
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit{
 
   sendMessage(messageText) {
     this.chat.sendMsg(messageText);
+    this.newMessage = ''
   }
 
 }
