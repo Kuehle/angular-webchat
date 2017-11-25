@@ -25,17 +25,12 @@ export class WebsocketService {
         }
     });
     
-    // We define our Observer which will listen to messages
-    // from our other components and send messages back to our
-    // socket server whenever the `next()` method is called.
     let observer = {
         next: (data: Object) => {
-            this.socket.emit('message', JSON.stringify(data));
+            this.socket.emit('message', data);
         },
     };
 
-    // we return our Rx.Subject which is a combination
-    // of both an observer and observable.
     return Rx.Subject.create(observer, observable);
   }
 

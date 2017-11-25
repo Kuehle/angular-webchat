@@ -22,6 +22,7 @@ export class AppComponent implements OnInit{
   }
 
   sendMessage(messageText) {
+    if(!messageText) return
     this.chat.sendMsg(messageText);
     this.newMessage = ''
   }

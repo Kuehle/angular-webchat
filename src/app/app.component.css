@@ -3,11 +3,35 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 3em;
-    background-color: #335;
+    background-color: #333;
     display: flex;
 }
 
 .controlls input {
     flex-grow: 1;
+    border-radius: 0;
+    padding: 0.7em;
+    border: none;
+    font-size: 1rem;
+    color: #8d4994;
+}
+
+button {
+    border-radius: 0;
+    border: none;
+    font-size: 1rem;
+    color: #8d4994;
+}
+
+.message {
+    border-radius: .4em .4em 0.1em .4em;
+    background-color: white;
+    padding: 1em;
+    margin: 1em 1em 1em 30%;
+}
+
+.bot {
+    margin: 1em 30% 1em 1em;
+    border-radius: .4em .4em .4em 0.1em;
+    background-color: white;
 }
