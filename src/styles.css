@@ -5,5 +5,17 @@ html {
     min-height: 100vh;
     font-family: sans-serif;
     color: #8d4994;
-    font-size: 22px;
+    font-size: 16px;
+}
+
+@media(max-width: 450px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
 }

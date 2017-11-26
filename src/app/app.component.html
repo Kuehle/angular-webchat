@@ -1,4 +1,4 @@
-<div class="message-area">
+<div class="message-area" #scrollMe [scrollTop]="scrollMe.scrollHeight">
     <div *ngFor="let message of messages" [ngClass]="{'message': true, 'bot': message.client.match('bot')}" [innerHtml]="message.text"></div>
 </div>
 
